@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.grid img[data-circle="circle"]{
+    width: 4.5vw;
+}
+.grid img[data-cross="cross"]{
+    width: 4vw;
+}
+h1 span{
+    color: #26ffcb;
+}
