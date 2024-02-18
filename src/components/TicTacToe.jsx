@@ -115,24 +115,23 @@ function TicTacToe() {
     }
     return (
         <>
-            <div className="w-full min-h-screen bg-[#0f1b21] font-[swear] font-medium">
-                <div className="w-full h-full flex items-center flex-col text-white pt-[3vw]">
-                    <h1 ref={heroTextRef} className='text-white text-[3vw] flex mb-[1.5vw] capitalize'>tic tac toe game in *<span>react</span></h1>
-                    <div className='gap-2 grid grid-cols-3'>
-                        <div onClick={(e) => { toggle(e, 0) }} ref={box1} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 1) }} ref={box2} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 2) }} ref={box3} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 3) }} ref={box4} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 4) }} ref={box5} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 5) }} ref={box6} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 6) }} ref={box7} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 7) }} ref={box8} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
-                        <div onClick={(e) => { toggle(e, 8) }} ref={box9} className="w-[9vw] h-[9vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+            <div className="w-full h-screen bg-[#0f1b21] font-[swear] font-medium">
+                <div className="w-full h-full flex items-center justify-center flex-col text-white pt-[3vw]">
+                    <h1 ref={heroTextRef} className='text-white lg:text-[3vw] md:text-[4vw] sm:text-[5vw] text-[8vw] flex md:mb-[1.5vw] mb-[5vw] capitalize'>tic tac toe game in *<span>react</span></h1>
+                    <div className='lg:gap-2 md:gap-1 gap-[2px] grid grid-cols-3'>
+                        <div onClick={(e) => { toggle(e, 0) }} ref={box1} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 1) }} ref={box2} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 2) }} ref={box3} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 3) }} ref={box4} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 4) }} ref={box5} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 5) }} ref={box6} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 6) }} ref={box7} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 7) }} ref={box8} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
+                        <div onClick={(e) => { toggle(e, 8) }} ref={box9} className="md:w-[9vw] w-[22vw] md:h-[9vw] h-[22vw] bg-[#1f3540] rounded flex items-center justify-center"></div>
                     </div>
                     <div>
                         <button onClick={reset} className="bg-[#1f3540] border-[#0f1b21] py-2 px-10 text-xl text-[#26ffcb] my-11 rounded-full capitalize">reset</button>
                     </div>
-
                 </div>
             </div>
             <ToastContainer />
