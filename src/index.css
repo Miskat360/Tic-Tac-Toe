@@ -10,3 +10,12 @@
 h1 span{
     color: #26ffcb;
 }
+
+@media screen and (max-width: 640px) {
+    .grid img[data-circle="circle"]{
+        width: 12vw;
+    }
+    .grid img[data-cross="cross"]{
+        width: 11vw;
+    }
+}
